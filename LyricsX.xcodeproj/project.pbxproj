@@ -1537,8 +1537,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ddddxxx/LyricsKit";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 0.11.0;
+				kind = exactVersion;
+				version = 0.11.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

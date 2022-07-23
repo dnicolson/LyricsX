@@ -71,6 +71,7 @@ class SearchLyricsViewController: NSViewController, NSTableViewDelegate, NSTable
     }
     
     @IBAction func searchAction(_ sender: Any?) {
+        print("search@")
         searchCanceller?.cancel()
         progressObservation?.invalidate()
         searchResult = []
@@ -83,14 +84,18 @@ class SearchLyricsViewController: NSViewController, NSTableViewDelegate, NSTable
         searchRequest = req
         searchCanceller = lyricsManager.lyricsPublisher(request: req)
             .sink(receiveCompletion: { [unowned self] _ in
+                print("x1")
                 DispatchQueue.main.async {
+                    print("x1.5")
                     self.progressIndicator.stopAnimation(nil)
                 }
             }, receiveValue: { [unowned self] lyrics in
+                print("x2")
                 self.lyricsReceived(lyrics: lyrics)
             }).cancel(after: .seconds(10), scheduler: DispatchQueue.lyricsDisplay.cx)
         progressIndicator.startAnimation(nil)
         tableView.reloadData()
+        print("xx1")
     }
     
     @IBAction func useLyricsAction(_ sender: Any) {
