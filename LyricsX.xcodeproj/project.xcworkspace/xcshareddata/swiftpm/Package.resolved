@@ -73,6 +73,14 @@
       }
     },
     {
+      "identity" : "masshortcut",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/shpakovski/MASShortcut",
+      "state" : {
+        "revision" : "6ddfd5f866f8f9679b5af656604dd33cc2540a48"
+      }
+    },
+    {
       "identity" : "musicplayer",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ddddxxx/MusicPlayer",
@@ -109,12 +117,21 @@
       }
     },
     {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit",
+      "state" : {
+        "revision" : "f222cbdf325885926566172f6f5f06af95473158",
+        "version" : "5.6.0"
+      }
+    },
+    {
       "identity" : "sparkle",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/sparkle-project/Sparkle",
       "state" : {
-        "revision" : "059ce9128775d5a636c7f4716f71a58919d3111e",
-        "version" : "2.2.1"
+        "branch" : "2.x",
+        "revision" : "983d19580b75feb5166254ea4b16df9b0ea49e8c"
       }
     },
     {

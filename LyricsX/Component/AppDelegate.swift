@@ -16,7 +16,7 @@ import AppCenterAnalytics
 import AppCenterCrashes
 
 #if !IS_FOR_MAS
-import Sparkle
+//import Sparkle
 #endif
 
 @NSApplicationMain
@@ -78,20 +78,20 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuItemValidation, NSMenu
             groupDefaults.bind(NSBindingName($0.key), withDefaultName: $0)
         }
         
-        #if IS_FOR_MAS
-        checkForMASReview(force: true)
-        #else
-        SUUpdater.shared()?.checkForUpdatesInBackground()
-        if #available(OSX 10.12.2, *) {
-            observeDefaults(key: .touchBarLyricsEnabled, options: [.new, .initial]) { _, change in
-                if change.newValue, TouchBarLyricsController.shared == nil {
-                    TouchBarLyricsController.shared = TouchBarLyricsController()
-                } else if !change.newValue, TouchBarLyricsController.shared != nil {
-                    TouchBarLyricsController.shared = nil
-                }
-            }
-        }
-        #endif
+//        #if IS_FOR_MAS
+//        checkForMASReview(force: true)
+//        #else
+//        SUUpdater.shared()?.checkForUpdatesInBackground()
+//        if #available(OSX 10.12.2, *) {
+//            observeDefaults(key: .touchBarLyricsEnabled, options: [.new, .initial]) { _, change in
+//                if change.newValue, TouchBarLyricsController.shared == nil {
+//                    TouchBarLyricsController.shared = TouchBarLyricsController()
+//                } else if !change.newValue, TouchBarLyricsController.shared != nil {
+//                    TouchBarLyricsController.shared = nil
+//                }
+//            }
+//        }
+//        #endif
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -168,11 +168,11 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuItemValidation, NSMenu
     }
     
     @IBAction func checkUpdateAction(_ sender: Any) {
-        #if IS_FOR_MAS
-        assert(false, "should not be there")
-        #else
-        SUUpdater.shared()?.checkForUpdates(sender)
-        #endif
+//        #if IS_FOR_MAS
+//        assert(false, "should not be there")
+//        #else
+//        SUUpdater.shared()?.checkForUpdates(sender)
+//        #endif
     }
     
     @IBAction func increaseOffset(_ sender: Any?) {
