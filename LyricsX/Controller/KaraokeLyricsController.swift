@@ -45,11 +45,11 @@ class KaraokeLyricsWindowController: NSWindowController {
         lyricsView.displayLrc("LyricsX")
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.lyricsView.displayLrc("")
-            AppController.shared.$currentLyrics
-                .signal()
-                .receive(on: DispatchQueue.lyricsDisplay.cx)
-                .invoke(KaraokeLyricsWindowController.handleLyricsDisplay, weaklyOn: self)
-                .store(in: &self.cancelBag)
+//            AppController.shared.$currentLyrics
+//                .signal()
+//                .receive(on: DispatchQueue.lyricsDisplay.cx)
+//                .invoke(KaraokeLyricsWindowController.handleLyricsDisplay, weaklyOn: self)
+//                .store(in: &self.cancelBag)
             AppController.shared.$currentLineIndex
                 .signal()
                 .receive(on: DispatchQueue.lyricsDisplay.cx)
