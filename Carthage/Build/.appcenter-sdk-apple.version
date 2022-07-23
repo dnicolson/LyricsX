@@ -1,0 +1,72 @@
+{
+  "Mac" : [
+    {
+      "name" : "AppCenter",
+      "hash" : "b9868ec04d00163134f10d636c6bdb6b2828601c2cd5dbba31374eeb69d3baaa",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "AppCenterAnalytics",
+      "hash" : "141d7600d9ee402dab87cd882bed667de2c869c4952e109875c5438ce6c29af4",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "AppCenterCrashes",
+      "hash" : "dc659f81563d7ebf8d6d48e3e787ca7cdf72152ecaf66ca2125af526c219017f",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "AppCenterPush",
+      "hash" : "661d482e3c3315a7645504f3c4b95e37d2cd324cc8fc1688558010c74a2c87f1",
+      "linking" : "dynamic"
+    }
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+    {
+      "name" : "AppCenter",
+      "hash" : "e7a573cebb0f4344efd2ad8fadef444a36580a6a5d44e1b85ac506249947524e",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "AppCenterAnalytics",
+      "hash" : "2329bd15f331d623ed7b17d76144ba60e57dbf175b5994a3f5c388e1f22cfa5c",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "AppCenterCrashes",
+      "hash" : "47e683473720bd97b07b556290ecdec0570d2118a386c776b265d459b7100bdb",
+      "linking" : "dynamic"
+    }
+  ],
+  "commitish" : "3.2.0",
+  "iOS" : [
+    {
+      "name" : "AppCenter",
+      "hash" : "3569539f5221c91150f68bb58c00a726911760bdf79b4c6180770b79e58d8bb0",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "AppCenterAnalytics",
+      "hash" : "a4a3fa7aa639450880b8d323970f8def6c6bceaafe073c095472e71039a9d0d0",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "AppCenterCrashes",
+      "hash" : "2d102ead6c50faf4474960a3c5608bc3d41f4734dd64fc6cbb8f86b110cf9657",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "AppCenterDistribute",
+      "hash" : "71040a746fba976118d6b4b64badbccdd9ee9cabbb7f3c8b8ba3def3718b16ac",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "AppCenterPush",
+      "hash" : "eb4f5dfe64cde1163b79ecc51c52ec76aad7ae57abba8b18b84714dc05c0e899",
+      "linking" : "dynamic"
+    }
+  ]
+}
