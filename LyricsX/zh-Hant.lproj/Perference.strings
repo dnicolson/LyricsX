@@ -163,7 +163,7 @@
 /* Class = "NSButtonCell"; title = "Strict Search"; ObjectID = "As7-rZ-u6c"; */
 "As7-rZ-u6c.title" = "精確搜尋";
 
-/* Class = "NSButtonCell"; title = "Customize TouchBar"; ObjectID = "zQK-i2-2Nc"; */
+/* Class = "NSButtonCell"; title = "Customize Touch Bar"; ObjectID = "zQK-i2-2Nc"; */
 "zQK-i2-2Nc.title" = "自訂 Touch Bar 歌詞";
 
 /* Class = "NSTextFieldCell"; title = "Search result match the exact search term"; ObjectID = "rSD-qR-EXA"; */

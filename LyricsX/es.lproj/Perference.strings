@@ -163,7 +163,7 @@
 /* Class = "NSButtonCell"; title = "Strict Search"; ObjectID = "As7-rZ-u6c"; */
 "As7-rZ-u6c.title" = "Búsqueda estricta";
 
-/* Class = "NSButtonCell"; title = "Customize TouchBar"; ObjectID = "zQK-i2-2Nc"; */
+/* Class = "NSButtonCell"; title = "Customize Touch Bar"; ObjectID = "zQK-i2-2Nc"; */
 "zQK-i2-2Nc.title" = "Personalizar la TouchaBar";
 
 /* Class = "NSTextFieldCell"; title = "Search result match the exact search term"; ObjectID = "rSD-qR-EXA"; */
