@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21208.1" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21208.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -397,7 +397,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DG2-8b-vTy">
-                            <rect key="frame" x="19" y="4" width="85" height="16"/>
+                            <rect key="frame" x="12" y="4" width="85" height="16"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Lyrics Offset:" id="IFz-XQ-DHf">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -425,7 +425,7 @@
                             </textFieldCell>
                         </textField>
                         <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BE8-Ux-QD2">
-                            <rect key="frame" x="110" y="2" width="72" height="19"/>
+                            <rect key="frame" x="103" y="2" width="79" height="19"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="s38-xY-35C"/>
                             </constraints>
@@ -451,7 +451,7 @@
                     <constraints>
                         <constraint firstItem="DG2-8b-vTy" firstAttribute="centerY" secondItem="LV9-pp-2tz" secondAttribute="centerY" id="5gA-e2-0RM"/>
                         <constraint firstItem="BE8-Ux-QD2" firstAttribute="leading" secondItem="DG2-8b-vTy" secondAttribute="trailing" constant="8" id="66I-Ch-hG0"/>
-                        <constraint firstItem="DG2-8b-vTy" firstAttribute="leading" secondItem="LV9-pp-2tz" secondAttribute="leading" constant="21" id="826-cy-w1T"/>
+                        <constraint firstItem="DG2-8b-vTy" firstAttribute="leading" secondItem="LV9-pp-2tz" secondAttribute="leading" constant="14" id="826-cy-w1T"/>
                         <constraint firstItem="FwA-Sj-odc" firstAttribute="leading" secondItem="BE8-Ux-QD2" secondAttribute="trailing" constant="5" id="9G1-eA-c8X"/>
                         <constraint firstItem="BE8-Ux-QD2" firstAttribute="top" secondItem="LV9-pp-2tz" secondAttribute="top" constant="2" id="Jw4-sr-Qu8"/>
                         <constraint firstItem="0ii-PC-ZCl" firstAttribute="centerY" secondItem="LV9-pp-2tz" secondAttribute="centerY" id="Yhp-74-yJR"/>
@@ -674,7 +674,7 @@ IA
                                         </connections>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GVe-a1-Feu">
-                                        <rect key="frame" x="261" y="5" width="37" height="14"/>
+                                        <rect key="frame" x="261" y="5" width="36" height="14"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Artist:" id="l8J-1r-dIZ">
                                             <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -682,7 +682,7 @@ IA
                                         </textFieldCell>
                                     </textField>
                                     <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1eb-gg-tTU">
-                                        <rect key="frame" x="304" y="3" width="191" height="19"/>
+                                        <rect key="frame" x="303" y="3" width="192" height="19"/>
                                         <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" drawsBackground="YES" id="q3k-EA-zCa">
                                             <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -864,15 +864,15 @@ IA
                             <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkQ-Bz-mQO">
                                 <rect key="frame" x="0.0" y="-201" width="600" height="200"/>
                                 <clipView key="contentView" drawsBackground="NO" id="YmL-P6-FDf">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="585" height="200"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="PEz-rD-ja1">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="585" height="200"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="600" height="200"/>
+                                            <size key="minSize" width="585" height="200"/>
                                             <size key="maxSize" width="640" height="10000000"/>
                                             <attributedString key="textStorage">
                                                 <fragment content="Lyrics Preview">
@@ -895,7 +895,7 @@ IA
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="gNp-w1-80P">
-                                    <rect key="frame" x="584" y="0.0" width="16" height="200"/>
+                                    <rect key="frame" x="585" y="0.0" width="15" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
