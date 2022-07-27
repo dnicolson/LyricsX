@@ -28,14 +28,14 @@
 /* Class = "NSMenuItem"; title = "Wrong Lyrics"; ObjectID = "fmS-zv-RcJ"; */
 "fmS-zv-RcJ.title" = "Wrong Lyrics";
 
-/* Class = "NSMenuItem"; title = "Enable Karaoke Lyrics"; ObjectID = "GGU-uz-d9h"; */
-"GGU-uz-d9h.title" = "Enable Karaoke Lyrics";
+/* Class = "NSMenuItem"; title = "Enable Karaoke Lyrics2"; ObjectID = "GGU-uz-d9h"; */
+"GGU-uz-d9h.title" = "Enable Karaoke Lyrics2";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Always on top"; ObjectID = "Gza-SX-MCH"; */
 "Gza-SX-MCH.ibShadowedToolTip" = "Always on top";
 
-/* Class = "NSMenuItem"; title = "Search Lyrics..."; ObjectID = "h6D-jz-GbI"; */
-"h6D-jz-GbI.title" = "Search Lyrics...";
+/* Class = "NSMenuItem"; title = "Search Lyrics2..."; ObjectID = "h6D-jz-GbI"; */
+"h6D-jz-GbI.title" = "Search Lyrics2...";
 
 /* Class = "NSMenuItem"; title = "Disable Lyrics for Entire Album"; ObjectID = "hgd-IJ-u14"; */
 "hgd-IJ-u14.title" = "Disable Lyrics for Entire Album";

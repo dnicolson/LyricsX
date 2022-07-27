@@ -273,7 +273,7 @@
                                 </binding>
                             </connections>
                         </menuItem>
-                        <menuItem title="Enable Karaoke Lyrics" tag="101" id="GGU-uz-d9h">
+                        <menuItem title="Enable Karaoke Lyrics2" tag="101" id="GGU-uz-d9h">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <binding destination="YC0-xP-lPo" name="value" keyPath="values.DesktopLyricsEnabled" id="duP-0I-KVe">
@@ -290,7 +290,7 @@
                             </connections>
                         </menuItem>
                         <menuItem isSeparatorItem="YES" id="yWX-1z-WqD"/>
-                        <menuItem title="Lyrics Delay Setter" tag="200" id="SDr-c6-5JC">
+                        <menuItem title="Lyrics Delay Setter1" tag="200" id="SDr-c6-5JC">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <attributedString key="userComments">
                                 <fragment content="#bc-ignore!">
@@ -304,7 +304,7 @@
                                 <outlet property="view" destination="LV9-pp-2tz" id="HgV-KT-3h0"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="Search Lyrics..." tag="201" identifier="MainMenu.SearchLyrics" id="h6D-jz-GbI">
+                        <menuItem title="Search Lyrics2...1" tag="201" identifier="MainMenu.SearchLyrics" id="h6D-jz-GbI">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isHiddenDuringMASReview" value="YES"/>
@@ -392,13 +392,13 @@
                         </menuItem>
                     </items>
                 </menu>
-                <customView id="LV9-pp-2tz" userLabel="Lyrics Offset View">
-                    <rect key="frame" x="0.0" y="0.0" width="242" height="23"/>
+                <customView misplaced="YES" id="LV9-pp-2tz" userLabel="Lyrics Offset View">
+                    <rect key="frame" x="0.0" y="0.0" width="242" height="22"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                     <subviews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DG2-8b-vTy">
-                            <rect key="frame" x="12" y="4" width="85" height="16"/>
-                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Lyrics Offset:" id="IFz-XQ-DHf">
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DG2-8b-vTy">
+                            <rect key="frame" x="19" y="4" width="89" height="16"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Lyrics Offset!:" id="IFz-XQ-DHf">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -425,7 +425,7 @@
                             </textFieldCell>
                         </textField>
                         <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BE8-Ux-QD2">
-                            <rect key="frame" x="103" y="2" width="79" height="19"/>
+                            <rect key="frame" x="110" y="2" width="72" height="19"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="s38-xY-35C"/>
                             </constraints>
@@ -450,8 +450,6 @@
                     </subviews>
                     <constraints>
                         <constraint firstItem="DG2-8b-vTy" firstAttribute="centerY" secondItem="LV9-pp-2tz" secondAttribute="centerY" id="5gA-e2-0RM"/>
-                        <constraint firstItem="BE8-Ux-QD2" firstAttribute="leading" secondItem="DG2-8b-vTy" secondAttribute="trailing" constant="8" id="66I-Ch-hG0"/>
-                        <constraint firstItem="DG2-8b-vTy" firstAttribute="leading" secondItem="LV9-pp-2tz" secondAttribute="leading" constant="14" id="826-cy-w1T"/>
                         <constraint firstItem="FwA-Sj-odc" firstAttribute="leading" secondItem="BE8-Ux-QD2" secondAttribute="trailing" constant="5" id="9G1-eA-c8X"/>
                         <constraint firstItem="BE8-Ux-QD2" firstAttribute="top" secondItem="LV9-pp-2tz" secondAttribute="top" constant="2" id="Jw4-sr-Qu8"/>
                         <constraint firstItem="0ii-PC-ZCl" firstAttribute="centerY" secondItem="LV9-pp-2tz" secondAttribute="centerY" id="Yhp-74-yJR"/>
@@ -635,10 +633,10 @@ IA
             </objects>
             <point key="canvasLocation" x="1281" y="654"/>
         </scene>
-        <!--Search Lyrics View Controller-->
+        <!--Search Lyrics2 View Controller-->
         <scene sceneID="uyG-Ma-t9Z">
             <objects>
-                <viewController storyboardIdentifier="SearchLyricsViewController" showSeguePresentationStyle="single" id="hFt-BA-jFS" userLabel="Search Lyrics View Controller" customClass="SearchLyricsViewController" customModule="LyricsX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchLyricsViewController" showSeguePresentationStyle="single" id="hFt-BA-jFS" userLabel="Search Lyrics2 View Controller" customClass="SearchLyricsViewController" customModule="LyricsX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="icq-QQ-RTZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="225"/>
                         <autoresizingMask key="autoresizingMask"/>

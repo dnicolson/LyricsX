@@ -28,13 +28,13 @@
 /* Class = "NSMenuItem"; title = "Wrong Lyrics"; ObjectID = "fmS-zv-RcJ"; */
 "fmS-zv-RcJ.title" = "目前歌詞有誤";
 
-/* Class = "NSMenuItem"; title = "Enable Karaoke Lyrics"; ObjectID = "GGU-uz-d9h"; */
+/* Class = "NSMenuItem"; title = "Enable Karaoke Lyrics2"; ObjectID = "GGU-uz-d9h"; */
 "GGU-uz-d9h.title" = "啟用動態歌詞";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Always on top"; ObjectID = "Gza-SX-MCH"; */
 "Gza-SX-MCH.ibShadowedToolTip" = "畫面置頂";
 
-/* Class = "NSMenuItem"; title = "Search Lyrics..."; ObjectID = "h6D-jz-GbI"; */
+/* Class = "NSMenuItem"; title = "Search Lyrics2..."; ObjectID = "h6D-jz-GbI"; */
 "h6D-jz-GbI.title" = "搜尋歌詞⋯";
 
 /* Class = "NSMenuItem"; title = "Disable Lyrics for Entire Album"; ObjectID = "hgd-IJ-u14"; */

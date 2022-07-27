@@ -27,7 +27,7 @@ extension MusicPlayerName {
     
     var icon: NSImage {
         switch self {
-        case .appleMusic:   return #imageLiteral(resourceName: "iTunes_icon")
+        case .appleMusic:   return #imageLiteral(resourceName: "launch_icon")
         case .spotify:  return #imageLiteral(resourceName: "spotify_icon")
         case .vox:      return #imageLiteral(resourceName: "vox_icon")
         case .audirvana: return #imageLiteral(resourceName: "audirvana_icon")

@@ -36,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuItemValidation, NSMenu
         // swiftlint:disable:next force_cast
         let searchVC = NSStoryboard.main!.instantiateController(withIdentifier: .init("SearchLyricsViewController")) as! SearchLyricsViewController
         let window = NSWindow(contentViewController: searchVC)
-        window.title = NSLocalizedString("Search Lyrics", comment: "window title")
+        window.title = NSLocalizedString("Search Lyrics2_", comment: "window title")
         return NSWindowController(window: window)
     }()
     

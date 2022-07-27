@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="dJj-XH-edl">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21208.1" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="dJj-XH-edl">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21208.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -65,17 +65,17 @@
             <objects>
                 <viewController title="General" id="d5d-dC-DK4" userLabel="General" customClass="PreferenceGeneralViewController" customModule="LyricsX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Ium-Ya-ZzT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="478"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="480"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <box title="Preferred music player" translatesAutoresizingMaskIntoConstraints="NO" id="JYR-Ed-Tax">
-                                <rect key="frame" x="17" y="342" width="566" height="112"/>
+                                <rect key="frame" x="17" y="342" width="566" height="114"/>
                                 <view key="contentView" id="r1e-Ln-LSb">
-                                    <rect key="frame" x="3" y="3" width="560" height="94"/>
+                                    <rect key="frame" x="4" y="5" width="558" height="94"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <customView translatesAutoresizingMaskIntoConstraints="NO" id="5xx-Ht-pau">
-                                            <rect key="frame" x="38" y="0.0" width="484" height="94"/>
+                                            <rect key="frame" x="37" y="0.0" width="484" height="94"/>
                                             <subviews>
                                                 <button translatesAutoresizingMaskIntoConstraints="NO" id="f2X-id-RV9" userLabel="Auto icon">
                                                     <rect key="frame" x="16" y="34" width="52" height="52"/>
@@ -676,7 +676,7 @@
                                                     <rect key="frame" x="117" y="36" width="320" height="23"/>
                                                     <subviews>
                                                         <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="UmX-Zf-IW4" customClass="AlphaColorWell" customModule="LyricsX" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="44" height="23"/>
+                                                            <rect key="frame" x="-3" y="-2" width="50" height="27"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="23" id="3QB-cR-AjK"/>
                                                                 <constraint firstAttribute="width" constant="44" id="LL6-cN-Jln"/>
@@ -691,7 +691,7 @@
                                                             </connections>
                                                         </colorWell>
                                                         <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="Jji-JX-Etj">
-                                                            <rect key="frame" x="92" y="0.0" width="44" height="23"/>
+                                                            <rect key="frame" x="89" y="-2" width="50" height="27"/>
                                                             <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <connections>
                                                                 <binding destination="Nm6-oq-wpY" name="value" keyPath="values.DesktopLyricsColor" id="4j3-XC-g9Q">
@@ -702,7 +702,7 @@
                                                             </connections>
                                                         </colorWell>
                                                         <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="wBm-l5-p6q">
-                                                            <rect key="frame" x="184" y="0.0" width="44" height="23"/>
+                                                            <rect key="frame" x="181" y="-2" width="50" height="27"/>
                                                             <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <connections>
                                                                 <binding destination="Nm6-oq-wpY" name="value" keyPath="values.DesktopLyricsProgressColor" id="0l4-H1-ez5">
@@ -713,7 +713,7 @@
                                                             </connections>
                                                         </colorWell>
                                                         <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="9of-o0-c02" customClass="AlphaColorWell" customModule="LyricsX" customModuleProvider="target">
-                                                            <rect key="frame" x="276" y="0.0" width="44" height="23"/>
+                                                            <rect key="frame" x="273" y="-2" width="50" height="27"/>
                                                             <color key="color" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <connections>
                                                                 <binding destination="Nm6-oq-wpY" name="value" keyPath="values.DesktopLyricsShadowColor" id="RMb-tR-oEG">
@@ -1024,7 +1024,7 @@
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="546" minWidth="40" maxWidth="1000" id="QdM-iA-Hjj">
+                                                <tableColumn width="517" minWidth="40" maxWidth="1000" id="QdM-iA-Hjj">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Keyword">
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -1145,6 +1145,7 @@
                     <declaredKeys>
                         <string>keyword</string>
                     </declaredKeys>
+                    <classReference key="objectClass" className="FilterKey"/>
                     <connections>
                         <binding destination="lN1-gG-AVq" name="contentArray" keyPath="self.directFilter" id="CcN-gz-8cd"/>
                     </connections>
@@ -1436,7 +1437,7 @@
                                 </buttonCell>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O5b-RV-0T6">
-                                <rect key="frame" x="249" y="105" width="159" height="32"/>
+                                <rect key="frame" x="249" y="105" width="163" height="32"/>
                                 <buttonCell key="cell" type="push" title="Customize Touch Bar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zQK-i2-2Nc">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
