@@ -28,13 +28,13 @@
 /* Class = "NSMenuItem"; title = "Wrong Lyrics"; ObjectID = "fmS-zv-RcJ"; */
 "fmS-zv-RcJ.title" = "Zły tekst";
 
-/* Class = "NSMenuItem"; title = "Enable Karaoke Lyrics2"; ObjectID = "GGU-uz-d9h"; */
+/* Class = "NSMenuItem"; title = "Enable Karaoke Lyrics"; ObjectID = "GGU-uz-d9h"; */
 "GGU-uz-d9h.title" = "Tryb Karaoke";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Always on top"; ObjectID = "Gza-SX-MCH"; */
 "Gza-SX-MCH.ibShadowedToolTip" = "Zawsze na wierzchu";
 
-/* Class = "NSMenuItem"; title = "Search Lyrics2..."; ObjectID = "h6D-jz-GbI"; */
+/* Class = "NSMenuItem"; title = "Search Lyrics..."; ObjectID = "h6D-jz-GbI"; */
 "h6D-jz-GbI.title" = "Szukaj tekstu...";
 
 /* Class = "NSMenuItem"; title = "Disable Lyrics for Entire Album"; ObjectID = "hgd-IJ-u14"; */

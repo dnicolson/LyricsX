@@ -8,7 +8,7 @@
 "OK" = "예";
 
 /* window title */
-"Search Lyrics2" = "가사 검색";
+"Search Lyrics" = "가사 검색";
 
 /* No comment provided by engineer. */
 "Touch Bar lyrics is not supported in Mac App Store Version. Please download on GitHub." = "터치바 가사 기능은 App Store 버전에서는 지원되지 않습니다. GitHub에서 받아 사용해주세요.";

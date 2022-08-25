@@ -8,7 +8,7 @@
 "OK" = "確定";
 
 /* window title */
-"Search Lyrics2" = "搜尋歌詞";
+"Search Lyrics" = "搜尋歌詞";
 
 /* No comment provided by engineer. */
 "Touch Bar lyrics is not supported in Mac App Store Version. Please download on GitHub." = "Mac App Store 的版本不支援 Touch Bar 歌詞，請前往 Github 下載。";
