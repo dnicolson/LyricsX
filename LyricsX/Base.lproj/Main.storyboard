@@ -258,6 +258,7 @@
                     <connections>
                         <outlet property="lyricsOffsetStepper" destination="FwA-Sj-odc" id="Wpt-Xo-ryF"/>
                         <outlet property="lyricsOffsetTextField" destination="BE8-Ux-QD2" id="U25-Zx-LxS"/>
+                        <outlet property="lyricsOffsetView" destination="LV9-pp-2tz" id="XY6-hn-HAX"/>
                         <outlet property="statusBarMenu" destination="OCV-Y8-x1C" id="zHx-WQ-Hu4"/>
                     </connections>
                 </customObject>
@@ -397,7 +398,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DG2-8b-vTy">
-                            <rect key="frame" x="12" y="4" width="85" height="16"/>
+                            <rect key="frame" x="19" y="4" width="85" height="16"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Lyrics Offset:" id="IFz-XQ-DHf">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
