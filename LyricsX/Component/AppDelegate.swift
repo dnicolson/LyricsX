@@ -26,11 +26,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuItemValidation, NSMenu
         return NSApplication.shared.delegate as? AppDelegate
     }
     
+    @IBOutlet weak var lyricsOffsetView: NSView!
     @IBOutlet weak var lyricsOffsetTextField: NSTextField!
     @IBOutlet weak var lyricsOffsetStepper: NSStepper!
     @IBOutlet weak var statusBarMenu: NSMenu!
     
     var karaokeLyricsWC: KaraokeLyricsWindowController?
+    var lyricsOffsetViewConstraint: NSLayoutConstraint?
     
     lazy var searchLyricsWC: NSWindowController = {
         // swiftlint:disable:next force_cast
@@ -48,6 +50,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuItemValidation, NSMenu
             Crashes.self
         ])
         #endif
+
+        if #available(macOS 10.16, *) {
+            for constraint in lyricsOffsetView.constraints where (
+                constraint.firstAttribute == .leading && constraint.constant == 19) {
+                lyricsOffsetViewConstraint = constraint
+            }
+        }
         
         let controller = AppController.shared
         
@@ -126,6 +135,20 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuItemValidation, NSMenu
     // MARK: - NSMenuDelegate
     
     func validateMenuItem(_ menuItem: NSMenuItem) -> Bool {
+        if #available(macOS 10.16, *) {
+            var menuHasOnState = false
+            for viewMenuItem in statusBarMenu.items {
+                if viewMenuItem.state == .on {
+                    menuHasOnState = true
+                }
+            }
+            
+            lyricsOffsetViewConstraint?.constant = 14
+            if menuHasOnState {
+                lyricsOffsetViewConstraint?.constant += 10
+            }
+        }
+        
         switch menuItem.action {
         case #selector(writeToiTunes(_:))?:
             return selectedPlayer.name == .appleMusic && AppController.shared.currentLyrics != nil
