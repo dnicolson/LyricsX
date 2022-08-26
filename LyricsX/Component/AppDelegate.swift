@@ -26,11 +26,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuItemValidation, NSMenu
         return NSApplication.shared.delegate as? AppDelegate
     }
     
+    @IBOutlet weak var lyricsOffsetView: NSView!
     @IBOutlet weak var lyricsOffsetTextField: NSTextField!
     @IBOutlet weak var lyricsOffsetStepper: NSStepper!
     @IBOutlet weak var statusBarMenu: NSMenu!
     
     var karaokeLyricsWC: KaraokeLyricsWindowController?
+    var lyricsOffsetViewConstraint: NSLayoutConstraint?
     
     lazy var searchLyricsWC: NSWindowController = {
         // swiftlint:disable:next force_cast
@@ -48,6 +50,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuItemValidation, NSMenu
             Crashes.self
         ])
         #endif
+
+        if #available(macOS 10.16, *) {
+            for constraint in lyricsOffsetView.constraints where (
+                constraint.firstAttribute == .leading && constraint.constant == 19) {
+                lyricsOffsetViewConstraint = constraint
+            }
+        }
         
         let controller = AppController.shared
         
@@ -138,6 +147,19 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuItemValidation, NSMenu
     
     func menuNeedsUpdate(_ menu: NSMenu) {
         menu.item(withTag: 202)?.isEnabled = AppController.shared.currentLyrics != nil
+    }
+    
+    func menuWillOpen(_ menu: NSMenu) {
+        if #available(macOS 10.16, *) {
+            let menuHasOnState = statusBarMenu.items.filter { menuItem in
+                return menuItem.state == .on
+            }.count > 0
+
+            lyricsOffsetViewConstraint?.constant = 14
+            if menuHasOnState {
+                lyricsOffsetViewConstraint?.constant += 10
+            }
+        }
     }
     
     // MARK: - Menubar Action
