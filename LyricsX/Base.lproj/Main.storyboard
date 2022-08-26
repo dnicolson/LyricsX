@@ -258,6 +258,7 @@
                     <connections>
                         <outlet property="lyricsOffsetStepper" destination="FwA-Sj-odc" id="Wpt-Xo-ryF"/>
                         <outlet property="lyricsOffsetTextField" destination="BE8-Ux-QD2" id="U25-Zx-LxS"/>
+                        <outlet property="lyricsOffsetView" destination="LV9-pp-2tz" id="XY6-hn-HAX"/>
                         <outlet property="statusBarMenu" destination="OCV-Y8-x1C" id="zHx-WQ-Hu4"/>
                     </connections>
                 </customObject>
